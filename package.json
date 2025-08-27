@@ -1,0 +1,37 @@
+{
+  "name": "movie-management-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev": "nodemon backend/src/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrutitagade/movie-management-api.git"
+  },
+  "keywords": [],
+  "author": "Shruti Tagade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shrutitagade/movie-management-api/issues"
+  },
+  "homepage": "https://github.com/shrutitagade/movie-management-api#readme",
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.4"
+  }
+}
