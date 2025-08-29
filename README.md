@@ -1,7 +1,7 @@
 
 # Movie Management API - Backend Development Assignment
 
-This project is a **Movie Management API** built for backend development evaluation. It supports full CRUD operations for movies, includes unit testing, and Swagger/OpenAPI documentation.
+This project is a **Movie Management API** built for backend development evaluation. It supports full CRUD operations for movies, includes unit testing, and Swagger/OpenAPI documentation. The project follows the **MVC (Model-View-Controller) design pattern** for proper separation of concerns.
 
 ---
 
@@ -21,17 +21,30 @@ GitHub repository: [https://github.com/shrutitagade/movie-management-api](https:
   * `releaseYear`
   * `genre`
   * `rating` (1 to 10)
+
 * **API Endpoints**:
 
   * `GET /movies` — List all movies
   * `GET /movies/:id` — Get movie by ID
   * `POST /movies` — Create a new movie
   * `PUT /movies/:id` — Update existing movie
-  * `DELETE /movies/:id` — Delete movie by ID
+  * `DELETE /movies/:id` — Delete a movie by ID
+
 * Input validation for required fields.
+
 * Unit tests covering DAO logic and API endpoints.
+
 * Swagger/OpenAPI 3.0 documentation auto-generated.
+
 * In-memory database using an array for persistence.
+
+* Follows **MVC architecture**:
+
+  * **Models** → Data and DAO operations
+  * **Controllers** → Route handlers
+  * **Routes** → API endpoints
+
+* Proper error handling for missing fields and non-existent IDs.
 
 ---
 
@@ -71,7 +84,7 @@ npm install
 npm run dev
 ```
 
-> This uses **nodemon** to automatically restart the server on file changes.
+> Uses **nodemon** to automatically restart the server on file changes.
 > Server will run on: `http://localhost:5000`
 
 ### **Production Mode**
@@ -112,8 +125,6 @@ Swagger UI is available at:
 http://localhost:5000/api-docs
 ```
 
-> Auto-generated using annotations in the controller.
-
 ---
 
 ## **Running Tests**
@@ -135,15 +146,16 @@ Tests cover:
 ## **Notes**
 
 * Uses an **in-memory database**, so all data resets when the server restarts.
-* Proper error handling for missing fields and non-existent IDs.
 * Fully tested with unit and API tests to ensure correct CRUD operations.
 * No changes to controllers are required — everything works as implemented.
+* Follows **MVC design pattern** for clean separation of concerns and maintainability.
 
 ---
 
 ### **Author**
 
 Shruti Tagade
-[GitHub](https://github.com/shrutitagade) | [LinkedIn]([https://www.linkedin.com/in/shruti-tagade](https://www.linkedin.com/in/shruti-tagade-4a6668253/))
+[GitHub](https://github.com/shrutitagade) | [LinkedIn](https://www.linkedin.com/in/shruti-tagade-4a6668253/)
 
+---
 
