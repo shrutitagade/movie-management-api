@@ -1,4 +1,4 @@
-// middlewares/validateRequest.js
+
 import { validationResult } from "express-validator";
 
 export const validateRequest = (req, res, next) => {
